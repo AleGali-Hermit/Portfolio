@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.homepage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  --line-x: 60%; /* <-- unico punto da modificare */
+  --col-w: calc(100vh * 263 / 1024); /* larghezza della colonna della linea */
+}
+
+.partesinistra {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carosello {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--line-x) + var(--col-w) / 2);
+  height: 100%;
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - var(--col-w) + var(--col-w) * 3.86 / 263) 0%,
+    calc(100% - var(--col-w) + var(--col-w) * 258.875 / 263) 50.24%,
+    calc(100% - var(--col-w) + var(--col-w) * 3.13 / 263) 100%,
+    0% 100%
+  );
+}
+
+.carosello img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.carosello img.active {
+  display: block;
+}
+
+.carosello img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.carosello img.active {
+  display: block;
+}
+
+/* SVG della Linea - responsive */
+.linea {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.linea svg {
+  position: absolute;
+  left: var(--line-x);
+  transform: translateX(-50%);
+  height: 100%;
+  width: auto;
+  aspect-ratio: 263 / 1024;
+}
+.containerintro {
+  padding-right: 60px;
+  right: 20%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 30px;
+  text-align: right;
+  z-index: 10;
+}
+
+.containerintro h1 {
+  font-size: 90px;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.containerintro a {
+  display: block;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  margin-top: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.containerintro a:hover {
+  transform: translateX(-10px);
+}
+
+/* Pulsanti sulla linea - posizionamento responsive */
+.linea a {
+  position: absolute;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  font-size: 25px;
+  padding: 30px;
+  border-radius: 20px;
+  border: none;
+  background: #eee;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 5;
+  pointer-events: auto;
+  /* NB: niente più "left" qui, va spostato nei selettori singoli sotto */
+}
+
+.linea a:hover {
+  background: #ddd;
+  transform: translateX(-50%) scale(1.05);
+}
+
+.PrimoBottone {
+  left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 60 / 263);
+  top: 8%;
+}
+
+.SecondoBottone {
+  left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 258.875 / 263);
+  top: 48%;
+}
+
+.TerzoBottone {
+  left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 60 / 263);
+  top: 88%;
+}
+
+/* Media queries per schermi piccoli */
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+  }
+
+  .containerintro {
+    right: 1.5vw;
+    padding: 1.5vw;
+  }
+
+  .linea a {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerintro {
+    right: 1vw;
+    font-size: 0.9rem;
+  }
+
+  .linea a {
+    font-size: 18px;
+  }
+}
