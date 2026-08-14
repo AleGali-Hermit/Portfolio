@@ -34,6 +34,7 @@
     calc(100% - var(--col-w) + var(--col-w) * 3.13 / 263) 100%,
     0% 100%
   );
+  pointer-events: auto;
 }
 
 .carosello img {
@@ -81,13 +82,14 @@
   aspect-ratio: 263 / 1024;
 }
 .containerintro {
+  position: relative;
   padding-right: 60px;
-  right: 20%;
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 30px;
   text-align: right;
   z-index: 10;
+  pointer-events: none; /* <-- aggiungi */
 }
 
 .containerintro h1 {
@@ -97,18 +99,12 @@
 }
 
 .containerintro a {
-  display: block;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-size: clamp(0.7rem, 1.5vw, 2rem);
   margin-top: 1rem;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
+  color: black;
+  pointer-events: auto;
 }
-
-.containerintro a:hover {
-  transform: translateX(-10px);
-}
-
 /* Pulsanti sulla linea - posizionamento responsive */
 .linea a {
   position: absolute;
@@ -123,15 +119,9 @@
   background: #eee;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
   z-index: 5;
   pointer-events: auto;
   /* NB: niente più "left" qui, va spostato nei selettori singoli sotto */
-}
-
-.linea a:hover {
-  background: #ddd;
-  transform: translateX(-50%) scale(1.05);
 }
 
 .PrimoBottone {

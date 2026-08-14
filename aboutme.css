@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.header {
+  padding: 20px;
+}
+.ParagrafoCentrale {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 80px;
+}
+.Titolo {
+  font-size: 50px;
+  font-family: "Marko One";
+  padding-left: 80px;
+}
+.Presentazione {
+  padding-left: 30px;
+  font-family: "Google Sans Flex";
+}
+.foto {
+  justify-self: center; /* Centra in orizzontale nella colonna */
+  align-self: center; /* Centra in verticale nella riga */
+}
+.bottoni {
+  grid-row: 2;
+}
+.social {
+  justify-self: center;
+  grid-column: 2;
+  background-color: #d9d9d9;
+  color: black;
+  padding: 30px 60px;
+  font-size: 50px;
+  font-family: "Marko One";
+  border-radius: 10px;
+  text-decoration: none;
+}
+.Journey {
+  justify-self: center;
+  grid-column: 1;
+  background-color: #d9d9d9;
+  color: black;
+  padding: 30px 60px;
+  font-size: 50px;
+  font-family: "Marko One";
+  border-radius: 10px;
+  text-decoration: none;
+}
