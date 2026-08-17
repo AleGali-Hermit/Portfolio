@@ -1,0 +1,41 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  padding: 20px;
+}
+.Titolo {
+  font-size: 50px;
+  font-family: "Marko One";
+  padding-left: 80px;
+}
+.social-list {
+  font-family: "Google Sans Flex";
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 80px;
+  font-size: 35px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.social-item img {
+  width: 80px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.social-item a {
+  color: black;
+}
+.GitHub-social-item img {
+  height: 50px;
+}

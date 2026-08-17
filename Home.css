@@ -56,11 +56,9 @@
   object-fit: cover;
   display: none;
 }
-
-.carosello img.active {
-  display: block;
+.carosello {
+  cursor: pointer;
 }
-
 /* SVG della Linea - responsive */
 .linea {
   position: absolute;
@@ -93,12 +91,14 @@
 }
 
 .containerintro h1 {
+  font-family: "Marko One";
   font-size: 90px;
   line-height: 1.2;
   margin-bottom: 2rem;
 }
 
 .containerintro a {
+  font-family: "Google Sans Flex";
   font-size: clamp(0.7rem, 1.5vw, 2rem);
   margin-top: 1rem;
   text-decoration: none;
@@ -138,7 +138,27 @@
   left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 60 / 263);
   top: 88%;
 }
+/*.PrimoBottone:hover {
+  background: linear-gradient(
+    140deg,
+    #f5f5f5 0%,
+    #656565 100%
+  ); /* stato metallico (al centro nel mockup) */
+/* stato metallico (al centro nel mockup) */
 
+/*.PrimoBottone:active {
+  background: #656565; /* stato scuro/premuto (in basso nel mockup) */
+.linea a:hover {
+  background: linear-gradient(
+    140deg,
+    #f5f5f5 0%,
+    #656565 100%
+  ); /* stato metallico (al centro nel mockup) */
+} /* stato metallico (al centro nel mockup) */
+
+.linea a:active {
+  background: #656565; /* stato scuro/premuto (in basso nel mockup) */
+}
 /* Media queries per schermi piccoli */
 @media (max-width: 768px) {
   .homepage {

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.header {
+  padding: 20px;
+}
+.Titolo {
+  font-size: 50px;
+  font-family: "Marko One";
+  padding-left: 80px;
+}
+.partecentrale {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* La prima colonna è larga 300px */
+  gap: 70px;
+}
+.cv {
+  transform: translateX(-100px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 120px;
+  border: 2px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.cv h1 {
+  font-family: "Marko One";
+  font-size: 48px;
+}
+.experience h1 {
+  font-family: "Marko One";
+  font-size: 48px;
+}
+.experience {
+  transform: translateX(-100px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 120px;
+  border: 2px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  margin-top: 80px;
+}
+.Skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Skills h1 {
+  font-family: "Marko One";
+  font-size: 48px;
+}
+.experience {
+  grid-column: 1;
+}
+.primacolonna {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px; /* Distanza verticale personalizzata tra Education ed Experience */
+}
