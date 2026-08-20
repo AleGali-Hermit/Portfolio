@@ -185,3 +185,32 @@
     font-size: 18px;
   }
 }
+.footer {
+  padding: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+}
+.Contatti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: white;
+}
+.Social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: white;
+}
+.linea1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 340px; /* regola tu in base a quanto deve sborda */
+  height: 4px;
+  background-color: White;
+}

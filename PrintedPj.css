@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src:
+    local("Helvetica Now Display Black"),
+    local("Helvetica-Now-Display-Black"),
+    url("HelveticaNowDisplay-BlackIta.woff2") format("woff2"),
+    url("HelveticaNowDisplay-BlackIta.woff") format("woff"),
+    url("HelveticaNowDisplay-BlackIta.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+.header {
+  padding: 20px;
+}
+.Titolo {
+  font-size: 50px;
+  font-family: "Marko One";
+  padding-left: 80px;
+}
+.Menù {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  place-items: center; /* scorciatoia per centrare orizz. + vert. */
+  margin: 0;
+  padding-top: 180px;
+}
+.Menù h2 {
+  font-family: "Helvetica Now Display";
+  text-decoration: none;
+  font-size: 32px;
+  color: black;
+}
+.Menù p {
+  font-family: "Google Sans Flex";
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+.Bottone {
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px;
+  padding-top: 0px;
+  border: 2px solid #000;
+  background-color: #d9d9d9;
+  border-radius: 11px;
+}
+.linea {
+  width: 340px; /* regola tu in base a quanto deve sborda */
+  height: 4px;
+  background-color: #1a1a1a;
+  margin-top: 4px;
+}
+.Bottone:hover {
+  background: linear-gradient(
+    140deg,
+    #f5f5f5 0%,
+    #656565 100%
+  ); /* stato metallico (al centro nel mockup) */
+} /* stato metallico (al centro nel mockup) */
+
+.Bottone:active {
+  background: #656565; /* stato scuro/premuto (in basso nel mockup) */
+}
