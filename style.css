@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src:
+    local("Helvetica Now Display Black"),
+    local("Helvetica-Now-Display-Black"),
+    url("HelveticaNowDisplay-BlackIta.woff2") format("woff2"),
+    url("HelveticaNowDisplay-BlackIta.woff") format("woff"),
+    url("HelveticaNowDisplay-BlackIta.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+.PersonaDisco {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: var(--disco-bg-color);
+}
+.ArmaniDunkPp .PersonaDisco {
+  --disco-bg-color: #d9d9d9;
+}
+.ArmaniDunkDp .PersonaDisco {
+  --disco-bg-color: #d9d9d9;
+}
+.Rifò .PersonaDisco {
+  --disco-bg-color: #637c65;
+}
