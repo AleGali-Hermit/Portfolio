@@ -30,6 +30,15 @@
 .Rifò .PersonaDisco {
   --disco-bg-color: #637c65;
 }
+.RaccoonCartoons .PersonaDisco {
+  --disco-bg-color: #191616;
+}
+.LandingPage .PersonaDisco {
+  --disco-bg-color: white;
+}
+.MuseoDelNovecento .PersonaDisco {
+  --disco-bg-color: black;
+}
 @media (max-width: 1920px) {
   .PersonaDisco svg {
     width: 40%;
