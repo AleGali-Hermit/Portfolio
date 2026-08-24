@@ -107,6 +107,7 @@
 }
 /* Pulsanti sulla linea - posizionamento responsive */
 .linea a {
+  font-family: "Marko One";
   position: absolute;
   transform: translateX(-50%);
   text-decoration: none;
