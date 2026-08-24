@@ -30,3 +30,9 @@
 .Rifò .PersonaDisco {
   --disco-bg-color: #637c65;
 }
+@media (max-width: 1920px) {
+  .PersonaDisco svg {
+    width: 40%;
+    height: 40%;
+  }
+}
