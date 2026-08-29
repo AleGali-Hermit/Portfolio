@@ -92,7 +92,7 @@
 
 .containerintro h1 {
   font-family: "Marko One";
-  font-size: 90px;
+  font-size: clamp(2rem, 5vw + 1rem, 5.625rem); /*90/16 = 5.625rem */
   line-height: 1.2;
   margin-bottom: 2rem;
 }
@@ -113,9 +113,9 @@
   text-decoration: none;
   color: black;
   white-space: nowrap;
-  font-size: 25px;
-  padding: 30px;
-  border-radius: 20px;
+  font-size: 2.5625rem; /* 25 / 16 = 1.5625 */
+  padding: 1.875rem; /* 30 / 16 = 1.875 */
+  border-radius: 1.25rem; /* 20 / 16 = 1.25 */
   border: none;
   background: #eee;
   font-weight: bold;
@@ -214,4 +214,36 @@
   width: 340px; /* regola tu in base a quanto deve sborda */
   height: 4px;
   background-color: White;
+}
+/* Attivo sul laptop scolastico (1536px effettivi) */
+@media (max-width: 1600px) {
+  .homepage {
+    --line-x: 55%;
+  }
+
+  .containerintro h1 {
+    font-size: clamp(1.8rem, 4vw + 0.8rem, 4.5rem);
+  }
+
+  .linea a {
+    font-size: 1.5625rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Se poi restringi ulteriormente sotto i 1366px reali (es. laptop più piccoli) */
+@media (max-width: 1366px) {
+  .homepage {
+    --line-x: 50%;
+    --col-w: calc(100vh * 200 / 1024);
+  }
+
+  .containerintro {
+    padding-right: 30px;
+  }
+
+  .linea a {
+    font-size: 1.25rem;
+    padding: 1rem 1.25rem;
+  }
 }
