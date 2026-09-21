@@ -69,7 +69,12 @@
 .Bottone:active {
   background: #656565; /* stato scuro/premuto (in basso nel mockup) */
 }
-
+@media (max-width: 1920px) {
+  .Menù {
+    gap: 100px;
+    padding-top: 140px;
+  }
+}
 @media (max-width: 1440px) {
   .Menù {
     gap: 100px;
