@@ -40,6 +40,13 @@
   height: 50px;
 }
 
+@media (max-width: 1400px) {
+  .social-list {
+    padding: 56px 48px;
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 900px) {
   .Titolo {
     padding-left: 24px;

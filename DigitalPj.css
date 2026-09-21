@@ -70,6 +70,13 @@
   background: #656565; /* stato scuro/premuto (in basso nel mockup) */
 }
 
+@media (max-width: 1400px) {
+  .Menù {
+    gap: 100px;
+    padding-top: 140px;
+  }
+}
+
 @media (max-width: 1200px) {
   .Menù {
     gap: 80px;

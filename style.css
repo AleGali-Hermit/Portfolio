@@ -53,6 +53,17 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .PersonaDisco {
+    padding: 34px;
+  }
+
+  .PersonaDisco svg {
+    width: 52%;
+    height: 52%;
+  }
+}
+
 @media (max-width: 1024px) {
   .PersonaDisco {
     padding: 30px;

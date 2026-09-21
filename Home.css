@@ -176,6 +176,38 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .homepage {
+    --line-x: 56%;
+    --col-w: clamp(110px, 14vw, 220px);
+  }
+
+  .containerintro {
+    padding-right: 32px;
+  }
+
+  .containerintro h1 {
+    font-size: clamp(2.2rem, 4vw, 4.5rem);
+  }
+
+  .linea a {
+    font-size: 1.8rem;
+    padding: 1.3rem 1.5rem;
+  }
+
+  .PrimoBottone {
+    top: 9%;
+  }
+
+  .SecondoBottone {
+    top: 47%;
+  }
+
+  .TerzoBottone {
+    top: 86%;
+  }
+}
+
 @media (max-width: 1366px) {
   .homepage {
     --line-x: 50%;
