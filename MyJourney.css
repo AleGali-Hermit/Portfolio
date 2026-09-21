@@ -69,3 +69,62 @@
   flex-direction: column;
   row-gap: 30px; /* Distanza verticale personalizzata tra Education ed Experience */
 }
+
+@media (max-width: 1100px) {
+  .partecentrale {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cv,
+  .experience {
+    transform: none;
+    margin: 0 20px;
+    padding: 30px 24px;
+  }
+
+  .Skills {
+    padding: 0 20px 30px;
+  }
+
+  .Skills h1,
+  .cv h1,
+  .experience h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .Titolo {
+    padding-left: 20px;
+    font-size: clamp(2.2rem, 7vw, 3rem);
+  }
+
+  .cv,
+  .experience {
+    margin: 0 14px;
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 12px;
+  }
+
+  .Titolo {
+    padding-left: 14px;
+  }
+
+  .cv,
+  .experience {
+    margin: 0 10px;
+    padding: 20px 14px;
+  }
+
+  .Skills h1,
+  .cv h1,
+  .experience h1 {
+    font-size: 1.8rem;
+  }
+}

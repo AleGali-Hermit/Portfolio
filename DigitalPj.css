@@ -69,3 +69,70 @@
 .Bottone:active {
   background: #656565; /* stato scuro/premuto (in basso nel mockup) */
 }
+
+@media (max-width: 1200px) {
+  .Menù {
+    gap: 80px;
+    padding-top: 120px;
+  }
+
+  .linea {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Titolo {
+    padding-left: 20px;
+    font-size: clamp(2.2rem, 7vw, 3rem);
+  }
+
+  .Menù {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 80px;
+  }
+
+  .Menù h2 {
+    font-size: 26px;
+  }
+
+  .Menù p {
+    font-size: 16px;
+  }
+
+  .Bottone {
+    padding: 20px 18px;
+  }
+
+  .linea {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 12px;
+  }
+
+  .Titolo {
+    padding-left: 14px;
+  }
+
+  .Menù {
+    padding-top: 60px;
+    gap: 28px;
+  }
+
+  .Menù h2 {
+    font-size: 22px;
+  }
+
+  .Bottone {
+    padding: 16px 14px;
+  }
+
+  .linea {
+    width: 180px;
+  }
+}

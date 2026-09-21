@@ -161,29 +161,145 @@
   background: #656565; /* stato scuro/premuto (in basso nel mockup) */
 }
 /* Media queries per schermi piccoli */
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .homepage {
-    flex-direction: column;
+    --line-x: 55%;
   }
 
-  .containerintro {
-    right: 1.5vw;
-    padding: 1.5vw;
+  .containerintro h1 {
+    font-size: clamp(1.8rem, 4vw + 0.8rem, 4.5rem);
   }
 
   .linea a {
-    padding: 20px;
+    font-size: 1.5625rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .homepage {
+    --line-x: 50%;
+    --col-w: calc(100vh * 200 / 1024);
+  }
+
+  .containerintro {
+    padding-right: 30px;
+  }
+
+  .linea a {
+    font-size: 1.25rem;
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .homepage {
+    --line-x: 52%;
+    --col-w: calc(100vh * 170 / 1024);
+  }
+
+  .containerintro {
+    padding-right: 20px;
+  }
+
+  .containerintro h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  .linea a {
+    font-size: 1.4rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .PrimoBottone {
+    top: 12%;
+  }
+
+  .SecondoBottone {
+    top: 46%;
+  }
+
+  .TerzoBottone {
+    top: 82%;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    --line-x: 54%;
+    --col-w: calc(100vh * 130 / 1024);
+    min-height: 100vh;
+  }
+
+  .containerintro {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    max-width: 46%;
+    padding: 0;
+    text-align: right;
+  }
+
+  .containerintro h1 {
+    font-size: clamp(1.6rem, 7vw, 2.7rem);
+    margin-bottom: 1rem;
+  }
+
+  .linea a {
+    font-size: 1rem;
+    padding: 0.85rem 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .PrimoBottone {
+    left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 52 / 263);
+    top: 16%;
+  }
+
+  .SecondoBottone {
+    left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 190 / 263);
+    top: 48%;
+  }
+
+  .TerzoBottone {
+    left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 52 / 263);
+    top: 82%;
   }
 }
 
 @media (max-width: 480px) {
+  .homepage {
+    --line-x: 58%;
+    --col-w: calc(100vh * 95 / 1024);
+  }
+
   .containerintro {
-    right: 1vw;
-    font-size: 0.9rem;
+    right: 8px;
+    max-width: 52%;
+  }
+
+  .containerintro a {
+    font-size: 0.7rem;
   }
 
   .linea a {
-    font-size: 18px;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .PrimoBottone {
+    left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 46 / 263);
+    top: 17%;
+  }
+
+  .SecondoBottone {
+    left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 145 / 263);
+    top: 48%;
+  }
+
+  .TerzoBottone {
+    left: calc(var(--line-x) - var(--col-w) / 2 + var(--col-w) * 46 / 263);
+    top: 82%;
   }
 }
 .footer {
@@ -215,35 +331,19 @@
   height: 4px;
   background-color: White;
 }
-/* Attivo sul laptop scolastico (1536px effettivi) */
-@media (max-width: 1600px) {
-  .homepage {
-    --line-x: 55%;
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+    gap: 30px;
   }
 
-  .containerintro h1 {
-    font-size: clamp(1.8rem, 4vw + 0.8rem, 4.5rem);
+  .Contatti,
+  .Social {
+    padding: 20px;
   }
 
-  .linea a {
-    font-size: 1.5625rem;
-    padding: 1.5rem;
-  }
-}
-
-/* Se poi restringi ulteriormente sotto i 1366px reali (es. laptop più piccoli) */
-@media (max-width: 1366px) {
-  .homepage {
-    --line-x: 50%;
-    --col-w: calc(100vh * 200 / 1024);
-  }
-
-  .containerintro {
-    padding-right: 30px;
-  }
-
-  .linea a {
-    font-size: 1.25rem;
-    padding: 1rem 1.25rem;
+  .linea1 {
+    width: 220px;
   }
 }

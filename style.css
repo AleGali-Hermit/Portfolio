@@ -45,3 +45,43 @@
     height: 40%;
   }
 }
+
+@media (max-width: 1440px) {
+  .PersonaDisco svg {
+    width: 48%;
+    height: 48%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .PersonaDisco {
+    padding: 30px;
+  }
+
+  .PersonaDisco svg {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .PersonaDisco {
+    padding: 20px;
+  }
+
+  .PersonaDisco svg {
+    width: 76%;
+    height: 76%;
+  }
+}
+
+@media (max-width: 480px) {
+  .PersonaDisco {
+    padding: 16px;
+  }
+
+  .PersonaDisco svg {
+    width: 92%;
+    height: 92%;
+  }
+}

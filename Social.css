@@ -39,3 +39,51 @@
 .GitHub-social-item img {
   height: 50px;
 }
+
+@media (max-width: 900px) {
+  .Titolo {
+    padding-left: 24px;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+  }
+
+  .social-list {
+    padding: 40px 24px;
+    font-size: 26px;
+    gap: 24px;
+  }
+
+  .social-item {
+    gap: 16px;
+  }
+
+  .social-item img {
+    width: 60px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 12px;
+  }
+
+  .social-list {
+    padding: 28px 16px;
+    font-size: 18px;
+    gap: 18px;
+  }
+
+  .social-item {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .social-item img {
+    width: 42px;
+  }
+
+  .social-item a {
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+}
