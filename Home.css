@@ -160,6 +160,22 @@
 .linea a:active {
   background: #656565; /* stato scuro/premuto (in basso nel mockup) */
 }
+
+@media (max-width: 1920px) {
+  .homepage {
+    --line-x: 62%;
+  }
+
+  .containerintro {
+    padding-right: 46px;
+  }
+
+  .linea a {
+    font-size: 2.1rem;
+    padding: 1.6rem 1.8rem;
+  }
+}
+
 /* Media queries per schermi piccoli */
 @media (max-width: 1600px) {
   .homepage {

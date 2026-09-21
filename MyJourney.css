@@ -70,6 +70,18 @@
   row-gap: 30px; /* Distanza verticale personalizzata tra Education ed Experience */
 }
 
+@media (max-width: 1920px) {
+  .partecentrale {
+    gap: 56px;
+  }
+
+  .cv,
+  .experience {
+    transform: translateX(-60px);
+    padding-left: 100px;
+  }
+}
+
 @media (max-width: 1400px) {
   .partecentrale {
     gap: 32px;

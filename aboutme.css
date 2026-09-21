@@ -55,6 +55,24 @@
   text-decoration: none;
 }
 
+@media (max-width: 1920px) {
+  .ParagrafoCentrale {
+    gap: 60px;
+    margin: 80px 60px;
+    font-size: 36px;
+  }
+
+  .Titolo {
+    font-size: clamp(2.8rem, 3vw, 4.2rem);
+  }
+
+  .social,
+  .Journey {
+    font-size: clamp(2.6rem, 2.7vw, 3.6rem);
+    padding: 28px 46px;
+  }
+}
+
 @media (max-width: 1400px) {
   .ParagrafoCentrale {
     gap: 48px;

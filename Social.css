@@ -40,6 +40,13 @@
   height: 50px;
 }
 
+@media (max-width: 1920px) {
+  .social-list {
+    padding: 70px 60px;
+    font-size: 38px;
+  }
+}
+
 @media (max-width: 1400px) {
   .social-list {
     padding: 56px 48px;
