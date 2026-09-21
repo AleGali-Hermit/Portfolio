@@ -72,20 +72,20 @@
 @media (max-width: 1920px) {
   .Menù {
     gap: 100px;
-    padding-top: 140px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 1440px) {
   .Menù {
     gap: 100px;
-    padding-top: 140px;
+    padding-top: 90px;
   }
 }
 
 @media (max-width: 1200px) {
   .Menù {
     gap: 80px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
 
   .linea {
