@@ -76,7 +76,7 @@
   left: var(--line-x);
   transform: translateX(-50%);
   height: 100%;
-  width: auto;
+  width: var(--col-w);
   aspect-ratio: 263 / 1024;
 }
 .containerintro {
@@ -425,4 +425,12 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-family: "Google Sans Flex";
 }
