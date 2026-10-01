@@ -354,6 +354,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: black;
+  font-size: 25px;
 }
 .Contatti {
   display: flex;
@@ -362,6 +363,19 @@
   align-items: center;
   padding: 30px;
   color: white;
+}
+.contatti-content {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.socialContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  width: 260px;
+  padding-top: 28px;
 }
 .Social {
   display: flex;
@@ -393,4 +407,22 @@
   .linea1 {
     width: 220px;
   }
+}
+.telefono {
+  font-size: 0.8em;
+}
+.linkedin {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.github {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.instagram {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
