@@ -355,11 +355,11 @@
   grid-template-columns: 1fr 1fr;
   background-color: black;
   font-size: 25px;
+  font-family: "Google Sans Flex";
 }
 .Contatti {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 30px;
   color: white;
