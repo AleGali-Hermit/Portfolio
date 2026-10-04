@@ -15,31 +15,38 @@
   font-weight: 900;
   font-style: normal;
 }
+.VisualSuperiore {
+  position: relative;
+}
 .PersonaDisco {
   display: flex;
   justify-content: center;
   padding: 50px;
-  background-color: var(--disco-bg-color);
 }
 .ArmaniDunkPp .PersonaDisco {
-  --disco-bg-color: #d9d9d9;
+  background-color: #d9d9d9;
 }
 .ArmaniDunkDp .PersonaDisco {
-  --disco-bg-color: #d9d9d9;
+  background-color: #d9d9d9;
 }
 .Rifò .PersonaDisco {
-  --disco-bg-color: #637c65;
+  background-color: #637c65;
 }
 .RaccoonCartoons .PersonaDisco {
-  --disco-bg-color: #191616;
+  background-color: #191616;
 }
 .LandingPage .PersonaDisco {
-  --disco-bg-color: white;
+  background-color: white;
 }
 .MuseoDelNovecento .PersonaDisco {
-  --disco-bg-color: black;
+  background-color: black;
 }
-
+.CinemaRitrovato .PersonaDisco {
+  background-color: #901813;
+}
+.SiReal .PersonaDisco {
+  background-color: #24804d;
+}
 @media (max-width: 1920px) {
   .PersonaDisco {
     padding: 40px;
@@ -99,5 +106,14 @@
   .PersonaDisco svg {
     width: 92%;
     height: 92%;
+  }
+}
+.header {
+  position: absolute;
+  padding: 20px;
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 12px;
   }
 }

@@ -88,7 +88,8 @@
 }
 
 @media (max-width: 768px) {
-  .footer {
+  .footer,
+  .footersocial {
     grid-template-columns: 1fr;
     padding: 60px 24px;
     gap: 30px;
