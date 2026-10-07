@@ -17,49 +17,51 @@
   display: grid;
   grid-template-columns: 1fr 1fr; /* La prima colonna è larga 300px */
   gap: 70px;
+  margin-top: 20px;
+  font-family: "Google Sans Flex";
 }
 .cv {
-  transform: translateX(-100px);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 120px;
   border: 2px;
+  padding: 35px;
   border-style: solid;
   border-width: 3px;
   border-color: black;
   margin-top: 80px;
-  margin-bottom: 30px;
+  border-radius: 10px;
 }
 .cv h1 {
   font-family: "Marko One";
-  font-size: 48px;
+  font-size: 38px;
 }
 .experience h1 {
   font-family: "Marko One";
-  font-size: 48px;
+  font-size: 38px;
 }
 .experience {
-  transform: translateX(-100px);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 120px;
+  padding: 35px;
   border: 2px;
   border-style: solid;
   border-width: 3px;
   border-color: black;
+  border-radius: 10px;
   margin-top: 80px;
+}
+.experienceelenco {
+  padding-top: 20px;
 }
 .Skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 .Skills h1 {
   font-family: "Marko One";
   font-size: 48px;
+}
+.Educazione {
+  padding-top: 20px;
 }
 .experience {
   grid-column: 1;
@@ -68,36 +70,27 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px; /* Distanza verticale personalizzata tra Education ed Experience */
+  padding-left: 30px; /* Stacca la colonna dal bordo sinistro della pagina */
 }
 
 @media (max-width: 1920px) {
   .partecentrale {
     gap: 56px;
-  }
-
-  .cv,
-  .experience {
-    transform: translateX(-60px);
-    padding-left: 100px;
+    margin-top: 35px;
   }
 }
 
 @media (max-width: 1400px) {
   .partecentrale {
     gap: 32px;
-  }
-
-  .cv,
-  .experience {
-    transform: none;
-    padding-left: 80px;
+    margin-top: 35px;
   }
 }
-
 @media (max-width: 1100px) {
   .partecentrale {
     grid-template-columns: 1fr;
     gap: 24px;
+    margin-top: 15px;
   }
 
   .cv,
