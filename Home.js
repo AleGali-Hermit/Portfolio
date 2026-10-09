@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const immagini = carosello.querySelectorAll("img");
   let indiceCorrente = 0;
 
-  carosello.addEventListener("click", () => {
+  carosello.addEventListener("click", (event) => {
+    // Ignore clicks on the carousel's transparent area or unrelated elements.
+    if (!event.target.closest("img")) return;
+
     immagini[indiceCorrente].classList.remove("active");
     indiceCorrente = (indiceCorrente + 1) % immagini.length;
     immagini[indiceCorrente].classList.add("active");

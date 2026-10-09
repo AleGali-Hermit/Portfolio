@@ -98,6 +98,8 @@
 }
 
 .containerintro a {
+  justify-self: end;
+  width: fit-content;
   font-family: "Google Sans Flex";
   font-size: clamp(0.7rem, 1.5vw, 2rem);
   margin-top: 1rem;
