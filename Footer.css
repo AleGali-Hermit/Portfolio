@@ -22,17 +22,29 @@
 
 .contatti-content {
   display: flex;
-  gap: 12px;
-  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  width: 260px;
   padding-top: 28px;
 }
-
+.contatti-content .primariga {
+  display: flex;
+  flex-direction: row; /* Allinea i 2 elementi uno di fianco all'altro */
+  gap: 15px; /* Spazio orizzontale tra i due elementi interni */
+  align-items: center;
+}
+.contatti-content .secondariga {
+  display: flex;
+  flex-direction: row; /* Allinea i 2 elementi uno di fianco all'altro */
+  gap: 15px; /* Spazio orizzontale tra i due elementi interni */
+  align-items: center;
+}
 .contatti-content img {
   width: 58px;
   height: 58px;
   object-fit: contain;
 }
-
 .socialContent {
   display: flex;
   flex-direction: column;
