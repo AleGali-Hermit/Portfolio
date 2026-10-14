@@ -5,23 +5,6 @@
   background-color: black;
   font-size: 19px;
   font-family: "Google Sans Flex", sans-serif;
-}
-.footersocial {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: black;
-  font-size: 19px;
-  font-family: "Google Sans Flex", sans-serif;
-  margin-top: 35vh;
-}
-.footerjourney {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: black;
-  font-size: 19px;
-  font-family: "Google Sans Flex", sans-serif;
   margin-top: 35vh;
 }
 .Contatti,
