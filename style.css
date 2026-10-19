@@ -121,6 +121,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
+  row-gap: 60px;
   margin: 20px;
 }
 .cellaSinistra {
@@ -179,4 +180,16 @@
 }
 .lista-container li {
   font-size: 1.3rem;
+}
+.secondarigasinistra {
+  grid-column: 1;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Google Sans Flex";
+  font-size: 1.3rem;
+}
+.imagecontainersecondariga {
+  grid-column: 2;
 }
