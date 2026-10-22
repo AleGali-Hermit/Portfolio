@@ -26,8 +26,8 @@
 .ArmaniDunkPp .PersonaDisco {
   background-color: #d9d9d9;
 }
-.ArmaniDunkDp .PersonaDisco {
-  background-color: #d9d9d9;
+.Prada .PersonaDisco {
+  background-color: #;
 }
 .Rifò .PersonaDisco {
   background-color: #637c65;
@@ -123,6 +123,7 @@
   column-gap: 40px;
   row-gap: 60px;
   margin: 20px;
+  font-family: "Google Sans Flex";
 }
 .cellaSinistra {
   grid-column: 1;
