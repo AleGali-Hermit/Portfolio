@@ -107,6 +107,16 @@
   color: black;
   pointer-events: auto;
 }
+.work-in-progress {
+  position: absolute;
+  right: 60px;
+  bottom: 110px;
+  padding-right: 60px;
+  z-index: 10;
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  text-align: right;
+}
 /* Pulsanti sulla linea - posizionamento responsive */
 .linea a {
   font-family: "Marko One";
@@ -287,6 +297,11 @@
     max-width: 46%;
     padding: 0;
     text-align: right;
+  }
+
+  .work-in-progress {
+    right: 10px;
+    bottom: 20px;
   }
 
   .containerintro h1 {
