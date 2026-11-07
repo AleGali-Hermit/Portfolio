@@ -1,0 +1,36 @@
+.CaroselloRifò {
+  position: relative;
+}
+.carosello__Item {
+  height: 300px;
+  display: none;
+}
+.carosello__Item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.Carosello__nav {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.BottoneCarosello {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.BottoneCarosello_Selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+.carosello__ItemSSelected {
+  display: block;
+}
