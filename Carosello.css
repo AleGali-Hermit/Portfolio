@@ -25,13 +25,13 @@
   display: inline-block;
   padding: 0;
   border: 0;
-  background: gray;
+  background: rgba(196, 190, 190, 0.925);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
 .carousel__dot.is-active {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(61, 60, 60, 0.582);
 }
 .carousel__slide.is-active {
   display: block;
