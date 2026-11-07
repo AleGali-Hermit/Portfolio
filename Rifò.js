@@ -1,21 +1,21 @@
-document.querySelectorAll(".CaroselloRifò").forEach((carousel) => {
-  const items = carousel.querySelectorAll(".carosello__Item");
-  const buttons = carousel.querySelectorAll(".BottoneCarosello");
+document.querySelectorAll(".carousel").forEach((carousel) => {
+  const slides = carousel.querySelectorAll(".carousel__slide");
+  const dots = carousel.querySelectorAll(".carousel__dot");
 
-  buttons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      const selectedItem = items[index];
-      if (!selectedItem) return;
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      const selectedSlide = slides[index];
+      if (!selectedSlide) return;
 
-      items.forEach((item) =>
-        item.classList.remove("carosello__ItemSSelected")
-      );
-      buttons.forEach((navButton) =>
-        navButton.classList.remove("BottoneCarosello_Selected")
-      );
+      slides.forEach((slide) => slide.classList.remove("is-active"));
+      dots.forEach((navDot) => {
+        navDot.classList.remove("is-active");
+        navDot.removeAttribute("aria-current");
+      });
 
-      selectedItem.classList.add("carosello__ItemSSelected");
-      button.classList.add("BottoneCarosello_Selected");
+      selectedSlide.classList.add("is-active");
+      dot.classList.add("is-active");
+      dot.setAttribute("aria-current", "true");
     });
   });
 });

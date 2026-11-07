@@ -1,17 +1,17 @@
-.CaroselloRifò {
+.carousel {
   position: relative;
 }
-.carosello__Item {
+.carousel__slide {
   height: 300px;
   display: none;
 }
-.carosello__Item img {
+.carousel__slide img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: contain;
 }
-.Carosello__nav {
+.carousel__nav {
   width: 100%;
   padding: 20px;
   position: absolute;
@@ -19,18 +19,20 @@
   left: 0;
   text-align: center;
 }
-.BottoneCarosello {
+.carousel__dot {
   width: 10px;
   height: 10px;
   display: inline-block;
+  padding: 0;
+  border: 0;
   background: gray;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
-.BottoneCarosello_Selected {
+.carousel__dot.is-active {
   background: rgba(255, 255, 255, 0.5);
 }
-.carosello__ItemSSelected {
+.carousel__slide.is-active {
   display: block;
 }
