@@ -125,6 +125,55 @@
   margin: 20px;
   font-family: "Google Sans Flex";
 }
+
+/* Specific styles for the Rifò page */
+.rifo-gallery {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1;
+}
+
+.rifo-gallery__main,
+.rifo-gallery__stack {
+  min-width: 0;
+}
+
+.rifo-gallery__main img,
+.rifo-gallery__stack img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rifo-gallery__stack {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  min-height: 0;
+}
+
+/* Generic default layout for other pages */
+.project-gallery {
+  width: 100%;
+  min-width: 0;
+}
+
+.project-gallery__main {
+  width: 100%;
+}
+
+.project-gallery__main img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .cellaSinistra {
   grid-column: 1;
   min-width: 0;
