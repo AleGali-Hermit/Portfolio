@@ -44,6 +44,7 @@
 }
 .MuseoDelNovecento .PersonaDisco {
   background-color: black;
+  border-bottom: 3px solid black;
 }
 .CinemaRitrovato .PersonaDisco {
   background-color: #901813;
