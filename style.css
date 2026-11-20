@@ -23,29 +23,35 @@
   justify-content: center;
   padding: 50px;
 }
-.ArmaniDunkPp .PersonaDisco {
+.ArmaniDunk .PersonaDisco {
   background-color: #d9d9d9;
+  border-bottom: 3px solid black;
 }
 .Prada .PersonaDisco {
   background-color: #e50019;
+  border-bottom: 3px solid black;
 }
 .Rifò .PersonaDisco {
   background-color: #637c65;
+  border-bottom: 3px solid black;
 }
 .RaccoonCartoons .PersonaDisco {
   background-color: #191616;
 }
 .LandingPage .PersonaDisco {
   background-color: white;
+  border-bottom: 3px solid black;
 }
 .MuseoDelNovecento .PersonaDisco {
   background-color: black;
 }
 .CinemaRitrovato .PersonaDisco {
   background-color: #901813;
+  border-bottom: 3px solid black;
 }
 .SiReal .PersonaDisco {
   background-color: #24804d;
+  border-bottom: 3px solid black;
 }
 @media (max-width: 1920px) {
   .PersonaDisco {
